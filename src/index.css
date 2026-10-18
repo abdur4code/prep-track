@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: var(--brand-color);
+  --color-brand-subtle: var(--brand-subtle);
+  --color-brand-hover: var(--brand-hover);
+}
+
+:root {
+  --brand-color: #0f766e;
+  --brand-subtle: #f0fdfa;
+  --brand-hover: #115e59;
+}
+
+.dark {
+  --brand-color: #2dd4bf;
+  --brand-subtle: rgba(45, 212, 191, 0.12);
+  --brand-hover: #14b8a6;
+}
